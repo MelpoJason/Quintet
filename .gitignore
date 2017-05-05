@@ -120,3 +120,5 @@ hs_err_pid*
 
 .idea
 
+backend/src/main/resources/static/
+backend/src/main/resources/templates/
