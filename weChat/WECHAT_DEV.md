@@ -1,0 +1,1 @@
+weChat directory is using for the personal weChat tiny application
