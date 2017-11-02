@@ -7,12 +7,15 @@ import { AppRoutingModule } from './app.routing';
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { UtilsPipe } from './pipe/utils.pipe';
+import { WelcomeComponent } from './welcome/welcome.component';
+import {HomepageService} from "./service/homepage.service";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
-    UtilsPipe
+    UtilsPipe,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +23,7 @@ import { UtilsPipe } from './pipe/utils.pipe';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [HomepageService],
   bootstrap: [AppComponent],
   entryComponents:[AppComponent],
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
