@@ -17,7 +17,7 @@ apply plugin: 'org.springframework.boot'
 apply plugin: "org.flywaydb.flyway"
 
 jar {
-	baseName = 'mhunteradmin'
+	baseName = 'quintet'
 	version = '0.0.1-SNAPSHOT'
 }
 
@@ -50,6 +50,11 @@ dependencies {
 	compile('org.springframework.session:spring-session')
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile('org.springframework.boot:spring-boot-starter-web-services')
+	compile group: 'com.google.guava', name: 'guava', version: '24.1-jre'
+	compile group: 'org.projectlombok', name: 'lombok', version: '1.16.18'
+	compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.7'
+	compile group: 'com.netflix.hystrix', name: 'hystrix-core', version: '1.5.12'
+	compile group: 'com.netflix.hystrix', name: 'hystrix-metrics-event-stream', version: '1.5.12'
 	runtime('mysql:mysql-connector-java')
 	runtime('org.postgresql:postgresql')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
