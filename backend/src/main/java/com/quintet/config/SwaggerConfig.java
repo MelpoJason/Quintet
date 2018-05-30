@@ -19,6 +19,7 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
+
                 .apis(RequestHandlerSelectors.basePackage("com.quintet.controller"))
                 .paths(PathSelectors.any())
                 .build();
@@ -26,6 +27,7 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
+
                 .title("quintet Api手册")
                 .description("quintet相关Restful API")
                 .contact(new Contact("谌卓", "", "jasonchan9280@gmail.com"))
