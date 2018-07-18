@@ -15,7 +15,7 @@ import org.slf4j.LoggerFactory;
 import java.util.Map;
 import java.util.concurrent.*;
 
-public class Exercise extends BackendApplicationTests {
+public class ExerciseForConcurrent extends BackendApplicationTests {
 
     private static Integer CPU_UTILIZATION = 1;
     private static Integer WAIT_TIME = 5;
@@ -27,7 +27,7 @@ public class Exercise extends BackendApplicationTests {
     private static String INPUT_PAYMENT_TYPE_OTHER1 = "OTHER1";
     private static String INPUT_PAYMENT_TYPE_OTHER2 = "OTHER2";
 
-    Logger logger = LoggerFactory.getLogger(Exercise.class);
+    Logger logger = LoggerFactory.getLogger(ExerciseForConcurrent.class);
 
     @Test
     public void testConcurrent() {

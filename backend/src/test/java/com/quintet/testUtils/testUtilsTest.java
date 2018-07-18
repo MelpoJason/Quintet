@@ -4,11 +4,7 @@ import org.junit.Test;
 
 import java.util.Vector;
 
-import static org.junit.Assert.*;
 
-/**
- * Created by helios on 01/06/2017.
- */
 public class testUtilsTest {
 
 
@@ -19,5 +15,10 @@ public class testUtilsTest {
         while (_rentals.elements().hasMoreElements()){
             
         }
+    }
+
+    @Test
+    public void testHashMapRBTree() {
+
     }
 }
