@@ -28,12 +28,6 @@ repositories {
 	mavenCentral()
 }
 
-flyway{
-	user = 'jason'
-	password = '920829'
-	url = 'jdbc:mysql://localhost:3306/quintet?characterEncoding=utf-8'
-}
-
 
 dependencies {
 //	compile('org.activiti:activiti-spring-boot-starter-basic:5.21.0')

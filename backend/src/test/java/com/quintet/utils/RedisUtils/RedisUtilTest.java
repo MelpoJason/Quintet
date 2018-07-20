@@ -9,6 +9,8 @@ import org.springframework.data.redis.connection.RedisConnection;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 
+import javax.annotation.Resource;
+
 public class RedisUtilTest extends BackendApplicationTests {
 
     Logger logger = LoggerFactory.getLogger(RedisUtilTest.class);
@@ -16,8 +18,8 @@ public class RedisUtilTest extends BackendApplicationTests {
     @Autowired
     RedisConnectionFactory connect;
 
-    @Autowired
-    RedisTemplate<String, Object> redisTemplate;
+    @Resource
+    private RedisTemplate<String, Object> redisTemplate;
 
     @Test
     public void testInputValue() {
