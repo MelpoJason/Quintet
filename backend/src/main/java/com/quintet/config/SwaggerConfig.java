@@ -15,6 +15,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class SwaggerConfig {
     @Bean
+
     public Docket createRestApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
@@ -27,10 +28,10 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("Quintet info")
-                .contact(new Contact("Jason Chan", "", "jasonchan9280@gmail.com"))
+                .title("quintet Api手册")
+                .description("quintet相关Restful API")
+                .contact(new Contact("谌卓", "", "jasonchan9280@gmail.com"))
                 .version("1.0")
-                .description("Quintet relative api handbook.")
                 .build();
     }
 }

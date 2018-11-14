@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		springBootVersion = '1.5.9.RELEASE'
+		springBootVersion = '1.5.10.RELEASE'
 	}
 	repositories {
 		mavenCentral()
@@ -52,6 +52,10 @@ dependencies {
 	compile group: 'org.projectlombok', name: 'lombok', version: '1.16.20'
     compile group: 'com.google.guava', name: 'guava', version: '26.0-jre'
 	compile group: 'com.alibaba', name: 'fastjson', version: '1.2.47'
+	compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.7.0'
+	compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.7.0'
+	compile group: 'hy'
+	runtime('mysql:mysql-connector-java')
 	runtime('org.postgresql:postgresql')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	testCompile('org.springframework.restdocs:spring-restdocs-mockmvc')
