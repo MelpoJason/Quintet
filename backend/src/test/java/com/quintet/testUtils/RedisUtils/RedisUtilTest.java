@@ -1,4 +1,4 @@
-package com.quintet.utils.RedisUtils;
+package com.quintet.testUtils.RedisUtils;
 
 import com.quintet.BackendApplicationTests;
 import org.junit.Test;

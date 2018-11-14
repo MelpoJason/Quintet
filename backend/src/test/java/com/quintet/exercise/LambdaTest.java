@@ -14,7 +14,6 @@ import org.junit.Test;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
-import java.util.TreeMap;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -41,7 +40,13 @@ public class LambdaTest extends BackendApplicationTests {
     @Test
     public void ListToMapTest() {
         Map humanMap = Maps.newTreeMap();
-        humanMap = humanList.stream().collect(Collectors.toMap(Human::getName, Function.identity(), (a, b) -> b, () -> new TreeMap<>(Comparator.reverseOrder())));
+        humanMap = humanList.stream().collect(Collectors.toMap(Human::getAge, Function.identity()));
+        System.out.println();
+    }
+
+    @Test
+    public void sortMap() {
+        List<Human> humans = humanList.stream().sorted((a, b) -> a.getAge() > b.getAge() ? 1 : -1).collect(Collectors.toList());
         System.out.println();
     }
 }
