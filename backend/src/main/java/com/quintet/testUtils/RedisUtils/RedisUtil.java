@@ -1,4 +1,4 @@
-package com.quintet.utils.RedisUtils;
+package com.quintet.testUtils.RedisUtils;
 
 public final class RedisUtil {
 

@@ -23,7 +23,7 @@ module.exports = function (config) {
       'text/x-typescript': ['ts', 'tsx']
     },
     remapIstanbulReporter: {
-      reports: {
+      dir: require('path').join(__dirname, 'coverage'), reports: {
         html: 'coverage',
         lcovonly: './coverage/coverage.lcov'
       }
@@ -39,6 +39,7 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
+    autoWatchBatchDelay: 500,
     browsers: ['Chrome'],
     singleRun: false
   });
